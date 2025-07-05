@@ -1,152 +1,152 @@
 # GUI-Builder v2.0
 
-Ein visueller GUI-Builder für AutoHotkey v2, mit dem Sie GUIs per Drag & Drop erstellen können.
+A visual GUI builder for AutoHotkey v2 that allows you to create GUIs using drag and drop.
 
 ## Features
 
-### 🎨 **Visueller Editor**
-- Drag & Drop Interface für alle AHK v2 Controls
-- Live-Vorschau während des Ziehens
-- Echtzeit-Größenanzeige
-- Arbeitsfläche mit sichtbarem Rahmen
+### 🎨 **Visual Editor**
+- Drag & Drop interface for all AHK v2 controls
+- Live preview during dragging
+- Real-time size display
+- Work area with visible frame
 
-### 📦 **Unterstützte Controls**
-- **Button** - Schaltflächen
-- **Edit** - Texteingabefelder
-- **Text** - Statische Texte
-- **Checkbox** - Kontrollkästchen
-- **Radio** - Optionsfelder
-- **ListBox** - Listenfelder
-- **DropDownList** - Dropdown-Listen
-- **ComboBox** - Kombinationsfelder
-- **Slider** - Schieberegler
-- **Progress** - Fortschrittsbalken
-- **GroupBox** - Gruppierungsrahmen
-- **Hotkey** - Hotkey-Eingabefelder
-- **DateTime** - Datum/Zeit-Picker
-- **MonthCal** - Monatskalender
-- **UpDown** - Auf/Ab-Regler
-- **Picture** - Bildanzeige
+### 📦 **Supported Controls**
+- **Button** - Buttons
+- **Edit** - Text input fields
+- **Text** - Static text
+- **Checkbox** - Checkboxes
+- **Radio** - Radio buttons
+- **ListBox** - List boxes
+- **DropDownList** - Dropdown lists
+- **ComboBox** - Combo boxes
+- **Slider** - Sliders
+- **Progress** - Progress bars
+- **GroupBox** - Grouping frames
+- **Hotkey** - Hotkey input fields
+- **DateTime** - Date/Time picker
+- **MonthCal** - Month calendar
+- **UpDown** - Up/Down controls
+- **Picture** - Image display
 
-### 🎯 **GUI-Größen**
-- Vordefinierte Größen: 800x600, 1024x768, 1280x720, 1366x768, 1440x900, 1600x900, 1920x1080, 2560x1440, 3840x2160
-- Benutzerdefinierte Größen möglich
-- Automatische GUI-Anpassung
+### 🎯 **GUI Sizes**
+- Predefined sizes: 800x600, 1024x768, 1280x720, 1366x768, 1440x900, 1600x900, 1920x1080, 2560x1440, 3840x2160
+- Custom sizes possible
+- Automatic GUI adjustment
 
 ### 💾 **Export**
-- Speichert als vollständige AHK v2 Dateien
-- Verwendet Template-basierte Generierung
-- UTF-8 Encoding für korrekte Zeichendarstellung
+- Saves as complete AHK v2 files
+- Uses template-based generation
+- UTF-8 encoding for correct character display
 
 ## Installation
 
-1. **AutoHotkey v2 installieren**
-   - Download von [autohotkey.com](https://www.autohotkey.com/)
-   - Mindestens Version 2.0 erforderlich
+1. **Install AutoHotkey v2**
+   - Download from [autohotkey.com](https://www.autohotkey.com/)
+   - Version 2.0 or higher required
 
-2. **Repository klonen**
+2. **Clone repository**
    ```bash
    git clone [repository-url]
    cd ahk2_projekte
    ```
 
-3. **GUI-Builder starten**
+3. **Start GUI Builder**
    ```bash
    gui_builder_v2.ahk
    ```
 
-## Verwendung
+## Usage
 
-### 1. **Control hinzufügen**
-- Klicken Sie auf den gewünschten Control-Typ in der Werkzeugleiste
-- Ziehen Sie in der Arbeitsfläche, um Größe und Position zu bestimmen
-- Lassen Sie die Maustaste los, um das Control zu erstellen
+### 1. **Add Control**
+- Click on the desired control type in the toolbar
+- Drag in the work area to determine size and position
+- Release the mouse button to create the control
 
-### 2. **Control bearbeiten**
-- Ziehen Sie an den Rändern, um die Größe zu ändern
-- Alle Controls sind nach dem Erstellen noch verschiebbar
+### 2. **Edit Control**
+- Drag the edges to change the size
+- All controls are still movable after creation
 
-### 3. **GUI speichern**
-- Klicken Sie auf "Speichern" in der Werkzeugleiste
-- Die GUI wird als `cool.ahk` gespeichert
-- Die Datei ist sofort lauffähig
+### 3. **Save GUI**
+- Click "Speichern" (Save) in the toolbar
+- The GUI will be saved as `cool.ahk`
+- The file is immediately executable
 
-### 4. **Alle Controls löschen**
-- Klicken Sie auf "Alle löschen" um neu zu beginnen
+### 4. **Delete All Controls**
+- Click "Alle löschen" (Delete All) to start over
 
-## Dateistruktur
+## File Structure
 
 ```
 ahk2_projekte/
-├── gui_builder_v2.ahk    # Hauptprogramm
-├── gui_template.ahk      # Template für gespeicherte GUIs
-├── cool.ahk             # Ausgabe-Datei (wird erstellt)
-├── icons/               # Icon-Ordner (optional)
-└── README.md            # Diese Datei
+├── gui_builder_v2.ahk    # Main program
+├── gui_template.ahk      # Template for saved GUIs
+├── cool.ahk             # Output file (created)
+├── icons/               # Icon folder (optional)
+└── README.md            # This file
 ```
 
-## Technische Details
+## Technical Details
 
-### **Control-Namensgebung**
+### **Control Naming**
 - Buttons: `Button20`, `Button21`, ...
-- GroupBox: `Button20`, `Button21`, ... (intern als Button benannt)
+- GroupBox: `Button20`, `Button21`, ... (internally named as Button)
 - Edit: `Edit1`, `Edit2`, ...
 - Text: `Text1`, `Text2`, ...
 - etc.
 
-### **Arbeitsfläche**
-- Standard: 780x570 Pixel
-- Anpassbar über ComboBox
-- Automatische GUI-Größenanpassung
+### **Work Area**
+- Standard: 780x570 pixels
+- Adjustable via ComboBox
+- Automatic GUI size adjustment
 
 ### **Hotkeys**
-- `LButton`: Control erstellen/ziehen
-- Nur aktiv wenn Control-Typ ausgewählt ist
+- `LButton`: Create/drag control
+- Only active when control type is selected
 
 ## Troubleshooting
 
-### **Control wird nicht erstellt**
-- Stellen Sie sicher, dass Sie in der Arbeitsfläche klicken
-- Prüfen Sie, ob der gewünschte Control-Typ ausgewählt ist
+### **Control not created**
+- Make sure you click in the work area
+- Check if the desired control type is selected
 
-### **Fehler beim Speichern**
-- Prüfen Sie Schreibrechte im Verzeichnis
-- Stellen Sie sicher, dass `gui_template.ahk` vorhanden ist
+### **Error when saving**
+- Check write permissions in the directory
+- Make sure `gui_template.ahk` exists
 
-### **GroupBox-Artefakte**
-- GroupBox-Titel werden automatisch nach dem Drag gesetzt
-- Leere Titel während des Ziehens verhindern Artefakte
+### **GroupBox artifacts**
+- GroupBox titles are automatically set after dragging
+- Empty titles during dragging prevent artifacts
 
-## Entwicklung
+## Development
 
-### **Hinzufügen neuer Controls**
-1. Button in der Werkzeugleiste hinzufügen
-2. Select-Funktion erstellen
-3. Control-Erstellung im LButton-Handler hinzufügen
-4. Speicher-Logik erweitern
+### **Adding new controls**
+1. Add button to toolbar
+2. Create Select function
+3. Add control creation in LButton handler
+4. Extend save logic
 
-### **Template anpassen**
-- `gui_template.ahk` enthält das Grundgerüst
-- Controls werden an `; --- Hier werden die Controls eingefügt` eingefügt
+### **Customizing template**
+- `gui_template.ahk` contains the basic structure
+- Controls are inserted at `; --- Hier werden die Controls eingefügt`
 
-## Lizenz
+## License
 
-Dieses Projekt steht unter der MIT-Lizenz.
+This project is licensed under the MIT License.
 
-## Beitragen
+## Contributing
 
-1. Fork erstellen
-2. Feature-Branch erstellen (`git checkout -b feature/AmazingFeature`)
-3. Änderungen committen (`git commit -m 'Add some AmazingFeature'`)
-4. Branch pushen (`git push origin feature/AmazingFeature`)
-5. Pull Request erstellen
+1. Fork the repository
+2. Create feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to branch (`git push origin feature/AmazingFeature`)
+5. Create Pull Request
 
 ## Changelog
 
 ### v2.0
-- Komplett für AutoHotkey v2 umgeschrieben
-- Neue Control-Typen hinzugefügt
-- Verbesserte Drag & Drop Funktionalität
-- Template-basiertes Speichern
-- Arbeitsfläche mit sichtbarem Rahmen
-- Korrekte Control-Namensgebung ohne Konflikte 
+- Completely rewritten for AutoHotkey v2
+- New control types added
+- Improved drag & drop functionality
+- Template-based saving
+- Work area with visible frame
+- Correct control naming without conflicts 
