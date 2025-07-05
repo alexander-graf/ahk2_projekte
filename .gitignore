@@ -1,0 +1,64 @@
+# AutoHotkey v2 GUI-Builder .gitignore
+
+# Ausgabe-Dateien
+cool.ahk
+*.ahk.bak
+*.ahk~
+
+# Temporäre Dateien
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Windows-spezifische Dateien
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# IDE/Editor-spezifische Dateien
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Log-Dateien
+*.log
+logs/
+
+# Backup-Dateien
+*.backup
+*.old
+*.orig
+
+# Kompilierte Dateien
+*.exe
+*.com
+
+# Icon-Ordner (falls nicht benötigt)
+# icons/
+
+# Persönliche Konfigurationsdateien
+config.ini
+settings.ini
+
+# Test-Dateien
+test_*.ahk
+*_test.ahk
+
+# Debug-Ausgaben
+debug/
+*.debug
+
+# Cache-Dateien
+cache/
+*.cache
+
+# Dokumentation (falls separat verwaltet)
+docs/
+*.pdf
+*.doc
+*.docx 
