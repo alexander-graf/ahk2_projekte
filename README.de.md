@@ -47,7 +47,7 @@ Ein visueller GUI-Builder für AutoHotkey v2, mit dem Sie GUIs per Drag & Drop e
 2. **Repository klonen**
    ```bash
    git clone [repository-url]
-   cd ahk2_projekte
+   cd gui-builder-ahk-v2
    ```
 
 3. **GUI-Builder starten**
@@ -77,7 +77,7 @@ Ein visueller GUI-Builder für AutoHotkey v2, mit dem Sie GUIs per Drag & Drop e
 ## Dateistruktur
 
 ```
-ahk2_projekte/
+gui-builder-ahk-v2/
 ├── gui_builder_v2.ahk    # Hauptprogramm
 ├── gui_template.ahk      # Template für gespeicherte GUIs
 ├── cool.ahk             # Ausgabe-Datei (wird erstellt)

@@ -47,7 +47,7 @@ A visual GUI builder for AutoHotkey v2 that allows you to create GUIs using drag
 2. **Clone repository**
    ```bash
    git clone [repository-url]
-   cd ahk2_projekte
+   cd gui-builder-ahk-v2
    ```
 
 3. **Start GUI Builder**
@@ -77,7 +77,7 @@ A visual GUI builder for AutoHotkey v2 that allows you to create GUIs using drag
 ## File Structure
 
 ```
-ahk2_projekte/
+gui-builder-ahk-v2/
 ├── gui_builder_v2.ahk    # Main program
 ├── gui_template.ahk      # Template for saved GUIs
 ├── cool.ahk             # Output file (created)
